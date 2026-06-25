@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Crop Tracker</h2>
+
+<input id="name" placeholder="Crop Name"><br><br>
+<input id="invest" placeholder="Investment"><br><br>
+<input id="profit" placeholder="Profit"><br><br>
+
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add() {
+ let n = name.value;
+ let i = invest.value;
+ let p = profit.value;
+
+ let li = document.createElement("li");
+ li.innerText = n + " - Invest: " + i + " Profit: " + p;
+
+ list.appendChild(li);
+}
+</script>
+
+</body>
+</html>

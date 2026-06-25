@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Interest Calculator</h2>
+
+<input id="p" placeholder="Principal"><br><br>
+<input id="r" placeholder="Rate"><br><br>
+<input id="t" placeholder="Years"><br><br>
+
+<button onclick="calc()">Calculate</button>
+
+<p id="out"></p>
+
+<script>
+function calc() {
+ let P = p.value;
+ let R = r.value / 100;
+ let T = t.value;
+
+ let A = P * Math.pow(1+R, T);
+
+ out.innerText = "Amount: " + A.toFixed(2);
+}
+</script>
+
+</body>
+</html>

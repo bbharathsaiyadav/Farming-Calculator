@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tractor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Tractor Cost</h2>
+
+<input id="fuel" placeholder="Fuel Cost per Hour"><br><br>
+<input id="hours" placeholder="Hours"><br><br>
+<input id="rent" placeholder="Rent per Hour"><br><br>
+
+<button onclick="calc()">Calculate</button>
+
+<p id="out"></p>
+
+<script>
+function calc() {
+ let f = fuel.value;
+ let h = hours.value;
+ let r = rent.value;
+
+ let total = (f*h) + (r*h);
+
+ out.innerText = "Total Cost: " + total;
+}
+</script>
+
+</body>
+</html>

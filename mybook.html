@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>My Book</h2>
+
+<input id="text" placeholder="Detail"><br><br>
+<input id="amt" placeholder="Amount"><br><br>
+
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add() {
+ let t = text.value;
+ let a = amt.value;
+
+ let li = document.createElement("li");
+ li.innerText = t + " : " + a;
+
+ list.appendChild(li);
+}
+</script>
+
+</body>
+</html>
