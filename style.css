@@ -44,9 +44,10 @@ header {
 
 /* CONTAINER */
 .container {
-    flex: 1;
     width: 100%;
-    padding: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 /* CARD */
