@@ -108,4 +108,46 @@ header {
     transform: translate(-50%, -50%) scale(6);
     opacity: 1;
     transition: 0.4s;
+}  /* Calculator Pages */
+
+.container{
+    max-width:700px;
+    margin:30px auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:green;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+#out{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
 }
